@@ -65,11 +65,11 @@ const Shop = () => {
               Coming Soon
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Online Shop Launch
+              Shop Launching Soon
             </h1>
             <p className="text-xl md:text-2xl opacity-90 leading-relaxed mb-8">
-              We're building an amazing online shopping experience for all your technology needs. 
-              Get ready to shop for computers, printers, security systems, and more!
+              Get ready for amazing deals! Our online shop is launching soon with exclusive offers 
+              on computers, printers, security systems, and networking equipment.
             </p>
             
             {/* Progress Bar */}
@@ -216,8 +216,8 @@ const Shop = () => {
             Be the First to Know
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Want to be notified when our online shop launches? Contact us to join our notification list 
-            and receive exclusive launch offers!
+            Exclusive offers are going to be announced soon! Join our notification list to be the first 
+            to know about special launch deals and discounts when our online shop opens.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
