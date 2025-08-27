@@ -74,46 +74,185 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Animated Background Grid */}
+        <div className="absolute inset-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${heroImage})` }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/40" />
+          </div>
+          
+          {/* Animated Tech Grid */}
+          <div className="absolute inset-0 opacity-30">
+            <div className="grid grid-cols-12 h-full">
+              {Array.from({ length: 144 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="border border-primary/20 relative"
+                  style={{
+                    animationDelay: `${Math.random() * 5}s`,
+                    animation: `pulse 3s infinite ease-in-out ${Math.random() * 2}s`
+                  }}
+                >
+                  {Math.random() > 0.95 && (
+                    <div className="absolute inset-0 bg-primary/30 animate-pulse" />
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Floating Tech Particles */}
+          <div className="absolute inset-0">
+            {Array.from({ length: 20 }).map((_, i) => (
+              <div
+                key={i}
+                className="absolute w-2 h-2 bg-primary rounded-full opacity-60"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animation: `float ${3 + Math.random() * 4}s ease-in-out infinite ${Math.random() * 2}s`,
+                }}
+              />
+            ))}
+          </div>
         </div>
         
-        <div className="relative z-10 container px-4 text-center text-white">
-          <div className="max-w-4xl mx-auto">
-            <Badge className="mb-4 bg-primary/20 text-primary border-primary">
-              Authorized Canon & HP Service Center
-            </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Complete IT Solutions & 
-              <span className="block text-primary">Security Systems</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-              Your trusted partner for computer services, CCTV installation, networking, 
-              server management, and printer solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-3 bg-primary hover:bg-primary/90">
-                <Phone className="mr-2 h-5 w-5" />
-                Get Free Quote
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
-                Learn More
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+        <div className="relative z-10 container px-4 text-white">
+          <div className="max-w-6xl mx-auto">
+            {/* Main Hero Content */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left Column - Text Content */}
+              <div className="text-center lg:text-left">
+                <div className="inline-block mb-6">
+                  <Badge className="mb-2 bg-primary/20 text-primary border-primary/40 backdrop-blur-sm">
+                    <Shield className="w-4 h-4 mr-2" />
+                    Authorized Canon & HP Service Center
+                  </Badge>
+                </div>
+                
+                <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
+                  <span className="block relative">
+                    <span className="bg-gradient-to-r from-white via-gray-100 to-primary bg-clip-text text-transparent">
+                      Complete IT
+                    </span>
+                    <div className="absolute -right-4 top-0 w-8 h-8 bg-tech-blue rounded-full animate-pulse opacity-70"></div>
+                  </span>
+                  <span className="block relative">
+                    <span className="bg-gradient-to-r from-primary via-tech-blue to-white bg-clip-text text-transparent">
+                      Solutions
+                    </span>
+                    <div className="absolute -left-2 top-2 w-4 h-4 bg-primary/60 rotate-45 animate-spin"></div>
+                  </span>
+                  <span className="block text-2xl md:text-3xl xl:text-4xl text-gray-300 font-normal mt-2">
+                    & Security Systems
+                  </span>
+                </h1>
+                
+                <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
+                  <span className="inline-block transform hover:scale-105 transition-transform">🔧</span> Computer Services • 
+                  <span className="inline-block transform hover:scale-105 transition-transform mx-2">📹</span> CCTV Installation • 
+                  <span className="inline-block transform hover:scale-105 transition-transform">🌐</span> Networking • 
+                  <span className="inline-block transform hover:scale-105 transition-transform mx-2">🖨️</span> Printer Solutions
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                  <Button 
+                    size="lg" 
+                    className="group relative overflow-hidden bg-primary hover:bg-primary/90 text-lg px-8 py-4 shadow-glow"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-tech-blue opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <Phone className="mr-2 h-5 w-5 relative z-10" />
+                    <span className="relative z-10">Get Free Quote</span>
+                    <div className="absolute right-2 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
+                  </Button>
+                  
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="group text-lg px-8 py-4 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
+                  >
+                    <span>Explore Services</span>
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </div>
+                
+                {/* Trust Indicators */}
+                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-gray-300">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="h-4 w-4 text-success" />
+                    <span>500+ Happy Clients</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Star className="h-4 w-4 text-warning" />
+                    <span>5-Star Service</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Shield className="h-4 w-4 text-tech-blue" />
+                    <span>Licensed & Insured</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Right Column - Interactive Tech Showcase */}
+              <div className="relative lg:block hidden">
+                <div className="relative w-full h-96">
+                  {/* Central Hub */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-br from-primary to-tech-blue rounded-full shadow-glow flex items-center justify-center group cursor-pointer">
+                    <Shield className="h-12 w-12 text-white group-hover:scale-110 transition-transform" />
+                    <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-ping"></div>
+                  </div>
+                  
+                  {/* Orbiting Service Icons */}
+                  {[
+                    { icon: Monitor, position: 'top-0 left-1/2 -translate-x-1/2', delay: '0s', service: 'Computers' },
+                    { icon: Network, position: 'top-1/4 right-0', delay: '1s', service: 'Networking' },
+                    { icon: Printer, position: 'bottom-1/4 right-0', delay: '2s', service: 'Printers' },
+                    { icon: Server, position: 'bottom-0 left-1/2 -translate-x-1/2', delay: '3s', service: 'Servers' },
+                    { icon: Wrench, position: 'bottom-1/4 left-0', delay: '4s', service: 'Parts' },
+                    { icon: Shield, position: 'top-1/4 left-0', delay: '5s', service: 'Security' },
+                  ].map((item, index) => (
+                    <div
+                      key={index}
+                      className={`absolute ${item.position} group cursor-pointer`}
+                      style={{ animationDelay: item.delay }}
+                    >
+                      <div className="relative">
+                        <div className="w-16 h-16 bg-card/90 backdrop-blur-sm rounded-full shadow-strong flex items-center justify-center group-hover:scale-125 transition-all duration-300 border border-primary/20">
+                          <item.icon className="h-8 w-8 text-primary group-hover:text-tech-blue transition-colors" />
+                        </div>
+                        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <span className="text-xs text-white bg-black/70 px-2 py-1 rounded whitespace-nowrap">
+                            {item.service}
+                          </span>
+                        </div>
+                        {/* Connecting Lines */}
+                        <div className="absolute top-8 left-8 w-px h-16 bg-gradient-to-b from-primary/60 to-transparent"></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Floating elements */}
-        <div className="absolute top-20 left-10 floating-animation opacity-30">
-          <Shield className="h-12 w-12 text-primary" />
+        {/* Animated Corner Elements */}
+        <div className="absolute top-10 left-10">
+          <div className="w-20 h-20 border-l-2 border-t-2 border-primary/40 floating-animation"></div>
         </div>
-        <div className="absolute bottom-20 right-10 floating-animation opacity-30" style={{ animationDelay: '2s' }}>
-          <Monitor className="h-10 w-10 text-tech-blue" />
+        <div className="absolute bottom-10 right-10">
+          <div className="w-20 h-20 border-r-2 border-b-2 border-tech-blue/40 floating-animation" style={{ animationDelay: '3s' }}></div>
+        </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 animate-bounce">
+          <div className="flex flex-col items-center space-y-2">
+            <span className="text-sm">Scroll to explore</span>
+            <ArrowRight className="h-4 w-4 rotate-90" />
+          </div>
         </div>
       </section>
 
