@@ -24,7 +24,7 @@ const Services = () => {
       icon: Monitor,
       title: "Computer Sales & Service",
       description: "Complete computer solutions for your business and personal needs",
-      image: computerImage,
+      
       features: [
         "Desktop & Laptop Sales",
         "Hardware Repairs & Upgrades",
@@ -39,7 +39,7 @@ const Services = () => {
       icon: Shield,
       title: "CCTV & Security Systems",
       description: "Professional security solutions to protect your property and assets",
-      image: securityImage,
+      
       features: [
         "CCTV Camera Installation",
         "Security System Design",
@@ -185,11 +185,10 @@ const Services = () => {
                       ))}
                     </div>
                     
-                    <div className="flex items-center justify-between">
-                      <span className="text-lg font-semibold text-primary">{service.pricing}</span>
-                      <Button variant="outline" size="sm" className="group">
-                        Learn More
-                        <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    <div className="flex items-center justify-end">
+                      <Button size="sm" className="group bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                        <Phone className="mr-1 h-4 w-4" />
+                        Call Us
                       </Button>
                     </div>
                   </div>
@@ -270,9 +269,9 @@ const Services = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
               <Phone className="mr-2 h-5 w-5" />
-              Call: (555) 123-4567
+              Schedule a Call
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" className="text-lg px-8 py-3 border-2 border-white text-white hover:bg-white hover:text-primary">
               Get Free Quote
             </Button>
           </div>

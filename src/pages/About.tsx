@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Users, Award, Target, Clock, Shield } from "lucide-react";
 import teamPhoto from "@/assets/team-photo.jpg";
+import canonCertificate from "@/assets/Canon_page-0001.jpg";
 
 const About = () => {
   const values = [
@@ -178,6 +179,28 @@ const About = () => {
                 <span className="font-medium">{cert}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Canon Authorization Certificate */}
+      <section className="py-8">
+        <div className="container px-4">
+          <div className="text-center mb-4">
+            <Badge className="mb-4">Canon Authorization</Badge>
+            <h3 className="text-2xl md:text-3xl font-bold mb-2 hero-text">
+              Authorized Service Centre Certificate
+            </h3>
+            <p className="text-muted-foreground">
+              This certificate validates our status as an authorised Canon service centre.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src={canonCertificate}
+              alt="Canon Authorized Service Centre Certificate"
+              className="rounded-lg shadow-strong max-w-3xl w-full -rotate-90"
+            />
           </div>
         </div>
       </section>

@@ -46,21 +46,20 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Visit Our Store",
+      title: "Visit Our Location",
       details: [
-        "123 Tech Street",
-        "Digital City, TC 12345",
-        "United States"
+        "Rapid InfoTech & Security Systems",
+        "98-A/1, Neela Building, Opp. NKV Furniture",
+        "WCC Road, Nagercoil - 1"
       ],
-      action: "Get Directions"
+      action: "Open in Maps"
     },
     {
       icon: Phone,
       title: "Call Us",
       details: [
-        "Main: +1 (555) 123-4567",
-        "Support: +1 (555) 123-4568",
-        "Emergency: +1 (555) 123-4569"
+        "Mobile: 9514118844, 9514118855",
+        "Office: 04652 490223"
       ],
       action: "Call Now"
     },
@@ -68,9 +67,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       details: [
-        "info@rapidinfotech.com",
-        "support@rapidinfotech.com",
-        "sales@rapidinfotech.com"
+        "info@rapidinfotech.com"
       ],
       action: "Send Email"
     },
@@ -78,9 +75,8 @@ const Contact = () => {
       icon: Clock,
       title: "Business Hours",
       details: [
-        "Monday - Friday: 9:00 AM - 6:00 PM",
-        "Saturday: 9:00 AM - 4:00 PM",
-        "Sunday: Closed"
+        "Mon - Sat: 9.00 AM - 8.00 PM",
+        "Emergency 24/7*365"
       ],
       action: "Emergency Support Available"
     }
@@ -131,20 +127,20 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactInfo.map((info, index) => (
-              <Card key={index} className="tech-card group">
-                <CardContent className="p-6 text-center">
+              <Card key={index} className="tech-card group h-full">
+                <CardContent className="p-6 text-center flex flex-col h-full">
                   <div className="service-icon mx-auto mb-4 group">
                     <info.icon className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-semibold mb-4">{info.title}</h3>
-                  <div className="space-y-2 mb-6">
+                  <div className="space-y-2 mb-6 flex-1">
                     {info.details.map((detail, detailIndex) => (
                       <p key={detailIndex} className="text-sm text-muted-foreground">
                         {detail}
                       </p>
                     ))}
                   </div>
-                  <Button variant="outline" size="sm" className="w-full">
+                  <Button variant="outline" className="w-full h-10">
                     {info.action}
                   </Button>
                 </CardContent>
@@ -255,16 +251,16 @@ const Contact = () => {
                 Visit Our Location
               </h2>
               
-              {/* Map Placeholder */}
+              {/* Google Map Embed */}
               <Card className="tech-card mb-6">
                 <CardContent className="p-0">
-                  <div className="h-64 bg-muted rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <Navigation className="h-12 w-12 text-primary mx-auto mb-2" />
-                      <p className="text-muted-foreground">Interactive Map Coming Soon</p>
-                      <p className="text-sm text-muted-foreground">123 Tech Street, Digital City</p>
-                    </div>
-                  </div>
+                  <iframe
+                    title="Rapid InfoTech Location Map"
+                    className="w-full h-64 rounded-lg"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    src={`https://www.google.com/maps?q=8.186806,77.424667(Rapid%20InfoTech)&z=16&output=embed`}
+                  />
                 </CardContent>
               </Card>
 
