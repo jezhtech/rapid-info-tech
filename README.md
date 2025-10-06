@@ -55,7 +55,7 @@ npm run preview
 
 ## Copyright & Ownership
 
-**© 2024 Enyard Private Limited. All rights reserved.**
+**© 2025 Enyard Private Limited. All rights reserved.**
 
 This website and all its contents, including but not limited to:
 - Source code
