@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Shield, Zap } from "lucide-react";
+import { Menu } from "lucide-react";
+import logo from "@/assets/logo-bg.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +24,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-2 group">
           <div className="relative">
-            <Shield className="h-8 w-8 text-primary transition-transform group-hover:scale-110" />
-            <Zap className="absolute -bottom-1 -right-1 h-4 w-4 text-tech-blue" />
+            <img src={logo} alt="Rapid InfoTech" className="h-8 w-8 object-contain rounded" />
           </div>
           <div className="hidden sm:block">
             <span className="text-xl font-bold hero-text">Rapid InfoTech</span>
@@ -62,7 +62,7 @@ const Header = () => {
             <SheetContent side="right" className="w-80">
               <div className="flex flex-col space-y-4 mt-8">
                 <Link to="/" className="flex items-center space-x-2 pb-4 border-b">
-                  <Shield className="h-6 w-6 text-primary" />
+                  <img src={logo} alt="Rapid InfoTech" className="h-6 w-6 object-contain rounded" />
                   <div>
                     <span className="text-lg font-bold hero-text">Rapid InfoTech</span>
                     <p className="text-sm text-muted-foreground">& Security Systems</p>

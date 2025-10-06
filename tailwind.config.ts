@@ -86,8 +86,9 @@ export default {
 				'glow': 'var(--shadow-glow)',
 			},
 			fontFamily: {
-				'heading': ['Inter', 'system-ui', 'sans-serif'],
-				'body': ['Inter', 'system-ui', 'sans-serif'],
+				'heading': ['Jost', 'system-ui', 'sans-serif'],
+				'body': ['Jost', 'system-ui', 'sans-serif'],
+				'sans': ['Jost', 'system-ui', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {

@@ -67,7 +67,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       details: [
-        "info@rapidinfotech.com"
+        "info@rapidinfo.tech"
       ],
       action: "Send Email"
     },

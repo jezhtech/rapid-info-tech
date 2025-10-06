@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Shield, Mail, Phone, MapPin, Clock, Zap, Award, Users, Star } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Award, Users, Star } from "lucide-react";
 import cashfreeLogo from "@/assets/CF_Logo_white-NoBG.png";
+import logo from "@/assets/logo-bg.png";
 
 const Footer = () => {
   return (
@@ -10,10 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="relative">
-                <Shield className="h-8 w-8 text-primary" />
-                <Zap className="absolute -bottom-1 -right-1 h-4 w-4 text-tech-blue" />
-              </div>
+              <img src={logo} alt="Rapid InfoTech" className="h-12 w-auto object-contain" />
               <div>
                 <span className="text-xl font-bold">Rapid InfoTech</span>
                 <p className="text-sm text-gray-300">& Security Systems</p>
@@ -73,7 +71,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                <span className="text-gray-300">info@rapidinfotech.com</span>
+                <span className="text-gray-300">info@rapidinfo.tech</span>
               </div>
               <div className="flex items-start space-x-2">
                 <Clock className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />

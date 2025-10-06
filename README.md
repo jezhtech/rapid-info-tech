@@ -70,7 +70,7 @@ npm run preview
 - **Address**: 98-A/1, Neela Building, Opp. NKV Furniture, WCC Road, Nagercoil - 1
 - **Mobile**: 9514118844, 9514118855
 - **Office**: 04652 490223
-- **Email**: info@rapidinfotech.com
+- **Email**: info@rapidinfo.tech
 - **Hours**: Mon - Sat: 9.00 AM – 8.00 PM • Emergency 24/7×365
 
 ## Credits
