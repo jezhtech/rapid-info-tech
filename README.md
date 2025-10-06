@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
+# Rapid InfoTech & Security Systems
 
-## Project info
+## Company Website
 
-**URL**: https://lovable.dev/projects/069d8849-95c2-48b4-864e-818ff542d5a8
+**Rapid InfoTech & Security Systems** is a premier technology solutions provider specializing in comprehensive IT services, security systems, and digital infrastructure solutions.
 
-## How can I edit this code?
+## About Rapid InfoTech
 
-There are several ways of editing your application.
+Rapid InfoTech & Security Systems is a leading technology company based in Nagercoil, Tamil Nadu, India. We provide enterprise-grade IT solutions including:
 
-**Use Lovable**
+- **Computer Sales & Service** - Complete computer solutions, repairs, and maintenance
+- **CCTV & Security Systems** - Professional security solutions and surveillance systems
+- **Networking Solutions** - Enterprise networking setup and maintenance
+- **Server Management** - Comprehensive server solutions and cloud migration
+- **Printer Services** - Authorized Canon & HP service center
+- **Parts & Equipment** - Quality computer parts and technology equipment
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/069d8849-95c2-48b4-864e-818ff542d5a8) and start prompting.
+## Contact Information
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Address**: 98-A/1, Neela Building, Opp. NKV Furniture, WCC Road, Nagercoil - 1
+- **Mobile**: 9514118844, 9514118855
+- **Office**: 04652 490223
+- **Email**: info@rapidinfotech.com
+- **Business Hours**: Mon - Sat: 9.00 AM - 8.00 PM
+- **Emergency Support**: 24/7*365
 
-**Use your preferred IDE**
+## Technical Specifications
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+This website is built using modern web technologies:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **UI Framework**: shadcn/ui components
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
 
-Follow these steps:
+## Development Setup
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+To run this project locally:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## Copyright & Ownership
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+**© 2024 Enyard Private Limited. All rights reserved.**
 
-**Use GitHub Codespaces**
+This website and all its contents, including but not limited to:
+- Source code
+- Design elements
+- Images and assets
+- Documentation
+- Branding materials
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+are the exclusive property of **Enyard Private Limited** and are protected by copyright laws.
 
-## What technologies are used for this project?
+## Design & Development
 
-This project is built with:
+**Designed and Developed by:**
+- **JezX** (www.jezx.in)
+- **Brand of Enyard Private Limited** (enyard.in)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Legal Notice
 
-## How can I deploy this project?
+**NO UNAUTHORIZED USE PERMITTED**
 
-Simply open [Lovable](https://lovable.dev/projects/069d8849-95c2-48b4-864e-818ff542d5a8) and click on Share -> Publish.
+This project is proprietary software owned by Enyard Private Limited. No person, organization, or entity is permitted to:
 
-## Can I connect a custom domain to my Lovable project?
+- Copy, reproduce, or duplicate any part of this codebase
+- Create derivative works based on this project
+- Distribute, share, or make available any portion of this code
+- Use this code for commercial purposes without explicit written permission
+- Reverse engineer or attempt to extract the source code
 
-Yes, you can!
+Any unauthorized use, reproduction, or distribution of this code is strictly prohibited and may result in legal action.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is proprietary and confidential. All rights are reserved by Enyard Private Limited. No license is granted for any use of this code without explicit written permission from the copyright holder.
+
+## Contact for Licensing
+
+For licensing inquiries or permission requests, please contact:
+- **Email**: info@enyard.in
+- **Website**: www.enyard.in
+
+---
+
+**Rapid InfoTech & Security Systems** - Where Technology Meets Excellence
