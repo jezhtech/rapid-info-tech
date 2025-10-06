@@ -1,101 +1,112 @@
-# Rapid InfoTech & Security Systems
+<div align="center">
 
-## Company Website
+<h1>Rapid InfoTech & Security Systems</h1>
 
-**Rapid InfoTech & Security Systems** is a premier technology solutions provider specializing in comprehensive IT services, security systems, and digital infrastructure solutions.
+<p>Enterprise IT Solutions • Security Systems • Digital Infrastructure</p>
 
-## About Rapid InfoTech
+<p>
+  <a href="https://react.dev"><img alt="React" src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white"></a>
+  <a href="https://www.typescriptlang.org/"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white"></a>
+  <a href="https://vitejs.dev"><img alt="Vite" src="https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white"></a>
+  <a href="https://tailwindcss.com/"><img alt="Tailwind" src="https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white"></a>
+  <a href="https://ui.shadcn.com/"><img alt="shadcn/ui" src="https://img.shields.io/badge/shadcn/ui-Components-000000"></a>
+  <img alt="Status" src="https://img.shields.io/badge/Status-Live-success">
+</p>
 
-Rapid InfoTech & Security Systems is a leading technology company based in Nagercoil, Tamil Nadu, India. We provide enterprise-grade IT solutions including:
+</div>
 
-- **Computer Sales & Service** - Complete computer solutions, repairs, and maintenance
-- **CCTV & Security Systems** - Professional security solutions and surveillance systems
-- **Networking Solutions** - Enterprise networking setup and maintenance
-- **Server Management** - Comprehensive server solutions and cloud migration
-- **Printer Services** - Authorized Canon & HP service center
-- **Parts & Equipment** - Quality computer parts and technology equipment
+---
 
-## Contact Information
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Quick Start](#quick-start)
+5. [Contact](#contact)
+6. [Credits](#credits)
+7. [Copyright & Legal](#copyright--legal)
+
+## Overview
+
+The Rapid InfoTech website showcases our services and capabilities across computers, security systems, networking, servers, and peripherals. It is built for speed, accessibility, and a polished user experience.
+
+## Features
+
+- Enterprise-grade UI with responsive design
+- Services catalog with clear CTAs
+- Optimized assets and typography
+- Contact page with Google Maps and inquiry form
+- SEO-friendly structure and metadata
+
+## Tech Stack
+
+- React 18 + TypeScript
+- Vite build tooling
+- Tailwind CSS and shadcn/ui component system
+- Lucide icons
+- React Router DOM
+
+## Quick Start
+
+```bash
+# 1) Install dependencies
+npm install
+
+# 2) Run the dev server
+npm run dev
+
+# 3) Build for production
+npm run build
+
+# 4) Preview the production build
+npm run preview
+```
+
+> Tip: The app runs on `http://localhost:8080/` by default in this workspace configuration.
+
+## Contact
 
 - **Address**: 98-A/1, Neela Building, Opp. NKV Furniture, WCC Road, Nagercoil - 1
 - **Mobile**: 9514118844, 9514118855
 - **Office**: 04652 490223
 - **Email**: info@rapidinfotech.com
-- **Business Hours**: Mon - Sat: 9.00 AM - 8.00 PM
-- **Emergency Support**: 24/7*365
+- **Hours**: Mon - Sat: 9.00 AM – 8.00 PM • Emergency 24/7×365
 
-## Technical Specifications
+## Credits
 
-This website is built using modern web technologies:
+**Design & Development**
 
-- **Frontend**: React 18 with TypeScript
-- **Build Tool**: Vite
-- **UI Framework**: shadcn/ui components
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Routing**: React Router DOM
+- JezX — `www.jezx.in`
+- A brand of Enyard Private Limited — `enyard.in`
 
-## Development Setup
+## Copyright & Legal
 
-To run this project locally:
+> **© 2025 Enyard Private Limited. All rights reserved.**
 
-```bash
-# Install dependencies
-npm install
+This website and all associated materials (source code, design, images/assets, documentation, and branding) are the exclusive property of **Enyard Private Limited**.
 
-# Start development server
-npm run dev
+### Usage Restrictions
 
-# Build for production
-npm run build
+You are NOT permitted to:
 
-# Preview production build
-npm run preview
-```
+- Copy or reproduce any part of this repository
+- Create derivative works from this project
+- Distribute, share, or publish the source or assets
+- Use for commercial purposes without written permission
+- Reverse engineer, extract, or attempt to re-create the codebase
 
-## Copyright & Ownership
+Violation of these terms may result in legal action.
 
-**© 2025 Enyard Private Limited. All rights reserved.**
+### Licensing
 
-This website and all its contents, including but not limited to:
-- Source code
-- Design elements
-- Images and assets
-- Documentation
-- Branding materials
+This project is proprietary and confidential. No license is granted for any use without explicit written permission from the copyright holder.
 
-are the exclusive property of **Enyard Private Limited** and are protected by copyright laws.
-
-## Design & Development
-
-**Designed and Developed by:**
-- **JezX** (www.jezx.in)
-- **Brand of Enyard Private Limited** (enyard.in)
-
-## Legal Notice
-
-**NO UNAUTHORIZED USE PERMITTED**
-
-This project is proprietary software owned by Enyard Private Limited. No person, organization, or entity is permitted to:
-
-- Copy, reproduce, or duplicate any part of this codebase
-- Create derivative works based on this project
-- Distribute, share, or make available any portion of this code
-- Use this code for commercial purposes without explicit written permission
-- Reverse engineer or attempt to extract the source code
-
-Any unauthorized use, reproduction, or distribution of this code is strictly prohibited and may result in legal action.
-
-## License
-
-This project is proprietary and confidential. All rights are reserved by Enyard Private Limited. No license is granted for any use of this code without explicit written permission from the copyright holder.
-
-## Contact for Licensing
-
-For licensing inquiries or permission requests, please contact:
-- **Email**: info@enyard.in
-- **Website**: www.enyard.in
+For licensing inquiries: `info@enyard.in` • `www.enyard.in`
 
 ---
 
-**Rapid InfoTech & Security Systems** - Where Technology Meets Excellence
+<div align="center">
+  <sub>Rapid InfoTech & Security Systems — Where Technology Meets Excellence</sub>
+  
+</div>
